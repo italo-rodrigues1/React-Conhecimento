@@ -76,10 +76,10 @@ export default function App(){
 // Handlers também são utilizados em casos específicos. Quando você precisa renderizar diferentes conteúdos para um mesmo bloco, todos eles baseados em um dado valor.
 
 const handlers = {
-  number: value => <NumberDisplay>{value}</NumberDisplay>
-  currency: value => <CurrencyDisplay customProps value={value} />
-  time: value => <TimeDisplay time={value} customProps />
-  date: value => <DateDisplay date={value}  showTime={false} />
+  number: value => <NumberDisplay>{value}</NumberDisplay>,
+  currency: value => <CurrencyDisplay customProps value={value} />,
+  time: value => <TimeDisplay time={value} customProps />,
+  date: value => <DateDisplay date={value}  showTime={false} />,
   default: value => value,
 };
 
